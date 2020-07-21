@@ -1,0 +1,16 @@
+#!/bin/bash
+#script to print files over SIZE in length
+#size can be entered by the user as an argument
+#grep filters out the first line of ls -l, and directories
+if [ $# -lt 1 ]
+then
+	echo "correct usage length [size], using 1000 for size"
+	SIZE=1000
+else
+	SIZE=$1
+fi
+ls -l | grep '^-' | while read LINE; do 
+	NAME=`echo $LINE | awk '{print $9}'`
+	LEN=`echo $LINE | awk '{print $5}'`
+	[ $LEN -gt $SIZE ] && echo "Name:  $NAME  Length:   $LEN"
+done
