@@ -19,4 +19,4 @@ It helps to have some basic Cisco networking experience to teach the labs.  If y
 
 
 ## Virtual
-Cisco PacketTracer once was only available to members of the Cisco Networking Academy.  In the past, my classes gained access to the academy and PacketTracer through the CyberPatriots competition.  Now, the academy offers a free Introduction to PacketTracer course which includes a PacketTracer download.  https://www.netacad.com/courses/packet-tracer-
+Cisco PacketTracer once was only available to members of the Cisco Networking Academy.  In the past, my classes gained access to the academy and PacketTracer through the CyberPatriots competition.  Now, the academy offers a free Introduction to PacketTracer course which includes a PacketTracer download.  https://www.netacad.com/courses/packet-tracer
