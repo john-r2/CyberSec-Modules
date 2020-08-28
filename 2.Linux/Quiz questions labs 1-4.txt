@@ -1,0 +1,89 @@
+How are containers different from virtual machines?
+
+What is the difference between user mode (ring 3) and kernel mode (ring 0)?
+
+Linux command line:  if you want to redirect the output of a command to a file, what character do you use?  ( |, \, <<, >>, >, <, &, or #)
+
+Linux command line:  If you want the output of prog1 to become the input of prog2, prog1 somechar prog2, what do you use for somechar?  ( |, \, <<, >>, >, <, &, or #)
+
+How does the OS use the PATH environment variable?
+
+Which of the following commands can be used to read the manual for your
+applications?
+<command> help
+help <command>
+? <command>
+man <command>
+
+Which of the following commands is NOT used in the management of files and
+directories?
+ping
+mkdir
+touch
+chmod
+
+What is the difference between an absolute file path and a relative file path?
+
+How does Linux mark a file as hidden?
+
+What is a symbolic link?  (Hint:  It is similar to something you often have on your Windows desktop.)
+
+Who has User ID (UID) 0?
+
+What file stores the list of users on a Linux system?
+
+What file stores the users' password hashes on a Linux system?
+
+What is the difference between su and sudo?  Whose password do you have to use with su and with sudo?
+
+The "root" or beginning of a Windows file system is usually C:\.  What is the root of a Linux file system?
+
+If your username is fred, what would be a good guess for the path to your home directory?
+
+The output of ls is -rwxrw-r-x fred officeworkers 4096 Jun 27 09:20 myfile.
+	Who has read permissions to myfile?
+
+The output of ls is -rwxrw-r-x fred officeworkers 4096 Jun 27 09:20 myfile.
+	Who has write permissions to myfile?
+
+The output of ls is -rwxrw-r-x fred officeworkers 4096 Jun 27 09:20 myfile.
+	Who can execute myfile?
+
+The output of ls is -rwxrw-r-x fred officeworkers 4096 Jun 27 09:20 myfile.
+	Who owns myfile?
+
+The output of ls is -rwxrw-r-x fred officeworkers 4096 Jun 27 09:20 myfile.
+	What group does myfile belong to?
+
+The output of ls is -rwxrw-r-x fred officeworkers 4096 Jun 27 09:20 myfile.
+	What command would you enter to give the write permission for myfile to everyone?
+
+The output of ls is -rwxrw-r-x fred officeworkers 4096 Jun 27 09:20 myfile.
+	What command (in octal, ie 777) would you enter to give:
+	read, write, execute to the owner, read & execute to the group, and read to everyone?
+
+The output of the which command only shows files that are in the ____ environmental variable.
+
+If you want to use the locate command to search for a file, want needs to be done first so that the results are accurate?
+
+
+john@DESKTOP/home/john/test$ pwd
+/home/john/test
+john@DESKTOP/home/john/test$ ls -la
+total 0
+drwxrwxrwx 1 john john 512 Aug 17 16:01 .
+drwxrwxrwx 1 john john 512 Aug 17 16:00 ..
+-rwxrwxrwx 1 john john  18 Aug 17 16:01 mine.sh
+john@DESKTOP/home/john/test$ mine.sh
+mine.sh: command not found
+john@DESKTOP/home/john/test$
+	Why did this command fail?
+
+The type command in Windows is very different from the type command in Linux.  In Windows it will output the contents of a file to the screen (like Linux cat.)  What does the type command do in Linux?
+
+What is different between the commands which, locate, and find?
+
+What would the command "man man" do?
+
+What command would you run to see all the aliases in your user environment?
+

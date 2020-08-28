@@ -1,0 +1,2 @@
+contestwinner@oompa-loompa:~/inventingroom$ curl 10.3.3.99/usersetup/ -d 'username=johnr2&phonenum=5555551212&appid=appidstring'
+{"Success":true,"userrecord":{'userid':51,'username':'johnr2','secret':'aa60fd55b12f9bc63a4821bca52970fe','seed':'8af945c0a6a6a3d3a35fc02791652cde','phonenum':'5555551212','appid':'appidstring','tokenindex':0}}
