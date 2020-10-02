@@ -3,8 +3,14 @@
 #Unzip the files and put primeNum.py into the directory you
 #  call Python from.
 
+#In this case, I just pasted the the contents of primeNum.py into
+#  this script, so there are no import problems
+
 # Prime Number Sieve
 # https://www.nostarch.com/crackingcodes/ (BSD Licensed)
+
+#primeNum.py content begins here
+#*************************************************
 
 import math, random
 
@@ -102,9 +108,11 @@ def generateLargePrime(keysize=1024):
         if isPrime(num):
             return num
 
-        
-#If you’re having trouble getting import to work, you can just copy the contents of primeNum.py and paste
-#   it here.  Then just call primeSieve and isPrime instead of primNum.primeSieve and primNum.isPrime.
+#primeNum.py content ends here
+#*************************************************************
+#safe primes content starts here
+
+
 
 # get a list of prime numbers
 # using 7000 will get about 900 primes
