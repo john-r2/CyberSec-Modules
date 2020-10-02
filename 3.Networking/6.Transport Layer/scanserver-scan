@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?><nmaprun start="1600984907" profile_name="Intense scan" xmloutputversion="1.04" scanner="nmap" version="7.80" startstr="Thu Sep 24 18:01:47 2020" args="nmap -T4 -A -v ec2-54-167-18-195.compute-1.amazonaws.com"><scaninfo services="1,3-4,6-7,9,13,17,19-26,30,32-33,37,42-43,49,53,70,79-85,88-90,99-100,106,109-111,113,119,125,135,139,143-144,146,161,163,179,199,211-212,222,254-256,259,264,280,301,306,311,340,366,389,406-407,416-417,425,427,443-445,458,464-465,481,497,500,512-515,524,541,543-545,548,554-555,563,587,593,616-617,625,631,636,646,648,666-668,683,687,691,700,705,711,714,720,722,726,749,765,777,783,787,800-801,808,843,873,880,888,898,900-903,911-912,981,987,990,992-993,995,999-1002,1007,1009-1011,1021-1100,1102,1104-1108,1110-1114,1117,1119,1121-1124,1126,1130-1132,1137-1138,1141,1145,1147-1149,1151-1152,1154,1163-1166,1169,1174-1175,1183,1185-1187,1192,1198-1199,1201,1213,1216-1218,1233-1234,1236,1244,1247-1248,1259,1271-1272,1277,1287,1296,1300-1301,1309-1311,1322,1328,1334,1352,1417,1433-1434,1443,1455,1461,1494,1500-1501,1503,1521,1524,1533,1556,1580,1583,1594,1600,1641,1658,1666,1687-1688,1700,1717-1721,1723,1755,1761,1782-1783,1801,1805,1812,1839-1840,1862-1864,1875,1900,1914,1935,1947,1971-1972,1974,1984,1998-2010,2013,2020-2022,2030,2033-2035,2038,2040-2043,2045-2049,2065,2068,2099-2100,2103,2105-2107,2111,2119,2121,2126,2135,2144,2160-2161,2170,2179,2190-2191,2196,2200,2222,2251,2260,2288,2301,2323,2366,2381-2383,2393-2394,2399,2401,2492,2500,2522,2525,2557,2601-2602,2604-2605,2607-2608,2638,2701-2702,2710,2717-2718,2725,2800,2809,2811,2869,2875,2909-2910,2920,2967-2968,2998,3000-3001,3003,3005-3007,3011,3013,3017,3030-3031,3052,3071,3077,3128,3168,3211,3221,3260-3261,3268-3269,3283,3300-3301,3306,3322-3325,3333,3351,3367,3369-3372,3389-3390,3404,3476,3493,3517,3527,3546,3551,3580,3659,3689-3690,3703,3737,3766,3784,3800-3801,3809,3814,3826-3828,3851,3869,3871,3878,3880,3889,3905,3914,3918,3920,3945,3971,3986,3995,3998,4000-4006,4045,4111,4125-4126,4129,4224,4242,4279,4321,4343,4443-4446,4449,4550,4567,4662,4848,4899-4900,4998,5000-5004,5009,5030,5033,5050-5051,5054,5060-5061,5080,5087,5100-5102,5120,5190,5200,5214,5221-5222,5225-5226,5269,5280,5298,5357,5405,5414,5431-5432,5440,5500,5510,5544,5550,5555,5560,5566,5631,5633,5666,5678-5679,5718,5730,5800-5802,5810-5811,5815,5822,5825,5850,5859,5862,5877,5900-5904,5906-5907,5910-5911,5915,5922,5925,5950,5952,5959-5963,5987-5989,5998-6007,6009,6025,6059,6100-6101,6106,6112,6123,6129,6156,6346,6389,6502,6510,6543,6547,6565-6567,6580,6646,6666-6669,6689,6692,6699,6779,6788-6789,6792,6839,6881,6901,6969,7000-7002,7004,7007,7019,7025,7070,7100,7103,7106,7200-7201,7402,7435,7443,7496,7512,7625,7627,7676,7741,7777-7778,7800,7911,7920-7921,7937-7938,7999-8002,8007-8011,8021-8022,8031,8042,8045,8080-8090,8093,8099-8100,8180-8181,8192-8194,8200,8222,8254,8290-8292,8300,8333,8383,8400,8402,8443,8500,8600,8649,8651-8652,8654,8701,8800,8873,8888,8899,8994,9000-9003,9009-9011,9040,9050,9071,9080-9081,9090-9091,9099-9103,9110-9111,9200,9207,9220,9290,9415,9418,9485,9500,9502-9503,9535,9575,9593-9595,9618,9666,9876-9878,9898,9900,9917,9929,9943-9944,9968,9998-10004,10009-10010,10012,10024-10025,10082,10180,10215,10243,10566,10616-10617,10621,10626,10628-10629,10778,11110-11111,11967,12000,12174,12265,12345,13456,13722,13782-13783,14000,14238,14441-14442,15000,15002-15004,15660,15742,16000-16001,16012,16016,16018,16080,16113,16992-16993,17877,17988,18040,18101,18988,19101,19283,19315,19350,19780,19801,19842,20000,20005,20031,20221-20222,20828,21571,22939,23502,24444,24800,25734-25735,26214,27000,27352-27353,27355-27356,27715,28201,30000,30718,30951,31038,31337,32768-32785,33354,33899,34571-34573,35500,38292,40193,40911,41511,42510,44176,44442-44443,44501,45100,48080,49152-49161,49163,49165,49167,49175-49176,49400,49999-50003,50006,50300,50389,50500,50636,50800,51103,51493,52673,52822,52848,52869,54045,54328,55055-55056,55555,55600,56737-56738,57294,57797,58080,60020,60443,61532,61900,62078,63331,64623,64680,65000,65129,65389" protocol="tcp" numservices="1000" type="syn"></scaninfo><verbose level="1"></verbose><debugging level="0"></debugging><output type="interactive">Starting Nmap 7.80 ( https://nmap.org ) at 2020-09-24 18:01 Eastern Daylight Time
+NSE: Loaded 151 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 18:01
+Completed NSE at 18:01, 0.00s elapsed
+Initiating NSE at 18:01
+Completed NSE at 18:01, 0.00s elapsed
+Initiating NSE at 18:01
+Completed NSE at 18:01, 0.00s elapsed
+Initiating Ping Scan at 18:01
+Scanning ec2-54-167-18-195.compute-1.amazonaws.com (54.167.18.195) [4 ports]
+Completed Ping Scan at 18:01, 0.39s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 18:01
+Completed Parallel DNS resolution of 1 host. at 18:01, 0.03s elapsed
+Initiating SYN Stealth Scan at 18:01
+Scanning ec2-54-167-18-195.compute-1.amazonaws.com (54.167.18.195) [1000 ports]
+Discovered open port 80/tcp on 54.167.18.195
+Discovered open port 22/tcp on 54.167.18.195
+Discovered open port 21/tcp on 54.167.18.195
+Discovered open port 23/tcp on 54.167.18.195
+Discovered open port 4445/tcp on 54.167.18.195
+Completed SYN Stealth Scan at 18:01, 5.08s elapsed (1000 total ports)
+Initiating Service scan at 18:01
+Scanning 5 services on ec2-54-167-18-195.compute-1.amazonaws.com (54.167.18.195)
+Completed Service scan at 18:02, 6.79s elapsed (5 services on 1 host)
+Initiating OS detection (try #1) against ec2-54-167-18-195.compute-1.amazonaws.com (54.167.18.195)
+Retrying OS detection (try #2) against ec2-54-167-18-195.compute-1.amazonaws.com (54.167.18.195)
+Initiating Traceroute at 18:02
+Completed Traceroute at 18:02, 3.05s elapsed
+Initiating Parallel DNS resolution of 9 hosts. at 18:02
+Completed Parallel DNS resolution of 9 hosts. at 18:02, 0.02s elapsed
+NSE: Script scanning 54.167.18.195.
+Initiating NSE at 18:02
+Completed NSE at 18:02, 7.14s elapsed
+Initiating NSE at 18:02
+Completed NSE at 18:02, 0.10s elapsed
+Initiating NSE at 18:02
+Completed NSE at 18:02, 0.00s elapsed
+Nmap scan report for ec2-54-167-18-195.compute-1.amazonaws.com (54.167.18.195)
+Host is up (0.0099s latency).
+Not shown: 995 filtered ports
+PORT     STATE SERVICE    VERSION
+21/tcp   open  ftp        vsftpd 3.0.3
+22/tcp   open  ssh        OpenSSH 8.2p1 Ubuntu 4ubuntu0.1 (Ubuntu Linux; protocol 2.0)
+23/tcp   open  telnet     Linux telnetd
+80/tcp   open  http       SimpleHTTPServer 0.6 (Python 3.8.2)
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-server-header: SimpleHTTP/0.6 Python/3.8.2
+|_http-title: Site doesn't have a title (text/html).
+4445/tcp open  upnotifyp?
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, FourOhFourRequest, GenericLines, GetRequest, HTTPOptions, Help, JavaRMI, Kerberos, LANDesk-RC, LDAPBindReq, LDAPSearchReq, LPDString, NCP, NotesRPC, RPCCheck, RTSPRequest, SIPOptions, SMBProgNeg, SSLSessionReq, TLSSessionReq, TerminalServer, TerminalServerCookie, WMSRequest, X11Probe, afp, giop, ms-sql-s, oracle-tns: 
+|_    You found Mr. York's secret port.
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port4445-TCP:V=7.80%I=7%D=9/24%Time=5F6D175A%P=i686-pc-windows-windows%
+SF:r(GenericLines,21,"You\x20found\x20Mr\.\x20York's\x20secret\x20port\.")
+SF:%r(GetRequest,21,"You\x20found\x20Mr\.\x20York's\x20secret\x20port\.")%
+SF:r(HTTPOptions,21,"You\x20found\x20Mr\.\x20York's\x20secret\x20port\.")%
+SF:r(RTSPRequest,21,"You\x20found\x20Mr\.\x20York's\x20secret\x20port\.")%
+SF:r(RPCCheck,21,"You\x20found\x20Mr\.\x20York's\x20secret\x20port\.")%r(D
+SF:NSVersionBindReqTCP,21,"You\x20found\x20Mr\.\x20York's\x20secret\x20por
+SF:t\.")%r(DNSStatusRequestTCP,21,"You\x20found\x20Mr\.\x20York's\x20secre
+SF:t\x20port\.")%r(Help,21,"You\x20found\x20Mr\.\x20York's\x20secret\x20po
+SF:rt\.")%r(SSLSessionReq,21,"You\x20found\x20Mr\.\x20York's\x20secret\x20
+SF:port\.")%r(TerminalServerCookie,21,"You\x20found\x20Mr\.\x20York's\x20s
+SF:ecret\x20port\.")%r(TLSSessionReq,21,"You\x20found\x20Mr\.\x20York's\x2
+SF:0secret\x20port\.")%r(Kerberos,21,"You\x20found\x20Mr\.\x20York's\x20se
+SF:cret\x20port\.")%r(SMBProgNeg,21,"You\x20found\x20Mr\.\x20York's\x20sec
+SF:ret\x20port\.")%r(X11Probe,21,"You\x20found\x20Mr\.\x20York's\x20secret
+SF:\x20port\.")%r(FourOhFourRequest,21,"You\x20found\x20Mr\.\x20York's\x20
+SF:secret\x20port\.")%r(LPDString,21,"You\x20found\x20Mr\.\x20York's\x20se
+SF:cret\x20port\.")%r(LDAPSearchReq,21,"You\x20found\x20Mr\.\x20York's\x20
+SF:secret\x20port\.")%r(LDAPBindReq,21,"You\x20found\x20Mr\.\x20York's\x20
+SF:secret\x20port\.")%r(SIPOptions,21,"You\x20found\x20Mr\.\x20York's\x20s
+SF:ecret\x20port\.")%r(LANDesk-RC,21,"You\x20found\x20Mr\.\x20York's\x20se
+SF:cret\x20port\.")%r(TerminalServer,21,"You\x20found\x20Mr\.\x20York's\x2
+SF:0secret\x20port\.")%r(NCP,21,"You\x20found\x20Mr\.\x20York's\x20secret\
+SF:x20port\.")%r(NotesRPC,21,"You\x20found\x20Mr\.\x20York's\x20secret\x20
+SF:port\.")%r(JavaRMI,21,"You\x20found\x20Mr\.\x20York's\x20secret\x20port
+SF:\.")%r(WMSRequest,21,"You\x20found\x20Mr\.\x20York's\x20secret\x20port\
+SF:.")%r(oracle-tns,21,"You\x20found\x20Mr\.\x20York's\x20secret\x20port\.
+SF:")%r(ms-sql-s,21,"You\x20found\x20Mr\.\x20York's\x20secret\x20port\.")%
+SF:r(afp,21,"You\x20found\x20Mr\.\x20York's\x20secret\x20port\.")%r(giop,2
+SF:1,"You\x20found\x20Mr\.\x20York's\x20secret\x20port\.");
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 2.6.32 (93%), Linux 3.10 (93%), Linux 3.10 - 4.11 (93%), Linux 3.2 - 4.9 (93%), Linux 3.4 - 3.10 (93%), Linux 2.6.32 - 3.10 (92%), Linux 2.6.32 - 3.13 (92%), Synology DiskStation Manager 5.2-5644 (91%), Linux 2.6.22 - 2.6.36 (89%), Linux 2.6.39 (89%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 7.313 days (since Thu Sep 17 10:31:50 2020)
+Network Distance: 19 hops
+TCP Sequence Prediction: Difficulty=260 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT      ADDRESS
+1   2.00 ms  192.168.1.1
+2   2.00 ms  Comtrend.Home (172.16.0.1)
+3   ...
+4   5.00 ms  64-203-188-144.unassigned.ntelos.net (64.203.188.144)
+5   27.00 ms 10.242.95.6
+6   26.00 ms 10.242.95.6
+7   10.00 ms equinix01-iad2.amazon.com (206.126.236.68)
+8   16.00 ms 54.239.111.250
+9   13.00 ms 52.93.114.1
+10  ... 12
+13  9.00 ms  52.93.28.204
+14  ... 18
+19  8.00 ms  ec2-54-167-18-195.compute-1.amazonaws.com (54.167.18.195)
+
+NSE: Script Post-scanning.
+Initiating NSE at 18:02
+Completed NSE at 18:02, 0.00s elapsed
+Initiating NSE at 18:02
+Completed NSE at 18:02, 0.00s elapsed
+Initiating NSE at 18:02
+Completed NSE at 18:02, 0.00s elapsed
+Read data files from: C:\Program Files (x86)\Nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 30.71 seconds
+           Raw packets sent: 2117 (98.000KB) | Rcvd: 70 (3.907KB)
+</output><host comment=""><status state="up"></status><address addrtype="ipv4" vendor="" addr="54.167.18.195"></address><hostnames><hostname type="user" name="ec2-54-167-18-195.compute-1.amazonaws.com"></hostname><hostname type="PTR" name="ec2-54-167-18-195.compute-1.amazonaws.com"></hostname></hostnames><ports><extraports count="995" state="filtered"></extraports><port protocol="tcp" portid="21"><state reason="syn-ack" state="open" reason_ttl="45"></state><service product="vsftpd" version="3.0.3" method="probed" conf="10" name="ftp"></service></port><port protocol="tcp" portid="22"><state reason="syn-ack" state="open" reason_ttl="46"></state><service product="OpenSSH" name="ssh" extrainfo="Ubuntu Linux; protocol 2.0" version="8.2p1 Ubuntu 4ubuntu0.1" conf="10" method="probed"></service></port><port protocol="tcp" portid="23"><state reason="syn-ack" state="open" reason_ttl="45"></state><service product="Linux telnetd" method="probed" conf="10" name="telnet"></service></port><port protocol="tcp" portid="80"><state reason="syn-ack" state="open" reason_ttl="44"></state><service product="SimpleHTTPServer" name="http" extrainfo="Python 3.8.2" version="0.6" conf="10" method="probed"></service></port><port protocol="tcp" portid="4445"><state reason="syn-ack" state="open" reason_ttl="47"></state><service method="table" conf="3" name="upnotifyp"></service></port></ports><os><portused state="open" portid="21" proto="tcp"></portused><osmatch line="55173" name="Linux 2.6.32" accuracy="93"><osclass type="general purpose" osfamily="Linux" vendor="Linux" osgen="2.6.X" accuracy="93"></osclass></osmatch><osmatch line="62820" name="Linux 3.10" accuracy="93"><osclass type="general purpose" osfamily="Linux" vendor="Linux" osgen="3.X" accuracy="93"></osclass></osmatch><osmatch line="63230" name="Linux 3.10 - 4.11" accuracy="93"><osclass type="general purpose" osfamily="Linux" vendor="Linux" osgen="4.X" accuracy="93"></osclass></osmatch><osmatch line="65105" name="Linux 3.2 - 4.9" accuracy="93"><osclass type="general purpose" osfamily="Linux" vendor="Linux" osgen="4.X" accuracy="93"></osclass></osmatch><osmatch line="65366" name="Linux 3.4 - 3.10" accuracy="93"><osclass type="general purpose" osfamily="Linux" vendor="Linux" osgen="3.X" accuracy="93"></osclass></osmatch><osmatch line="56381" name="Linux 2.6.32 - 3.10" accuracy="92"><osclass type="general purpose" osfamily="Linux" vendor="Linux" osgen="3.X" accuracy="92"></osclass></osmatch><osmatch line="56411" name="Linux 2.6.32 - 3.13" accuracy="92"><osclass type="general purpose" osfamily="Linux" vendor="Linux" osgen="3.X" accuracy="92"></osclass></osmatch><osmatch line="101159" name="Synology DiskStation Manager 5.2-5644" accuracy="91"><osclass type="storage-misc" osfamily="DiskStation Manager" vendor="Synology" osgen="5.X" accuracy="91"></osclass></osmatch><osmatch line="51668" name="Linux 2.6.22 - 2.6.36" accuracy="89"><osclass type="general purpose" osfamily="Linux" vendor="Linux" osgen="2.6.X" accuracy="89"></osclass></osmatch><osmatch line="58000" name="Linux 2.6.39" accuracy="89"><osclass type="general purpose" osfamily="Linux" vendor="Linux" osgen="2.6.X" accuracy="89"></osclass></osmatch></os><uptime lastboot="Thu Sep 17 10:31:50 2020" seconds="631828"></uptime><tcpsequence index="260" values="6CF611F2,9C7BB676,2A177E36,BBF96275,7EC81EA0,9D0064AC" difficulty="Good luck!"></tcpsequence><ipidsequence values="0,0,0,0,0,0" class="All zeros"></ipidsequence><tcptssequence values="B03EB889,B03EB909,B03EB969,B03EB9E9,B03EBA49,B03EB2C9" class="other"></tcptssequence><trace port="80" proto="tcp"><hop rtt="2.00" host="" ipaddr="192.168.1.1" ttl="1"></hop><hop rtt="2.00" host="Comtrend.Home" ipaddr="172.16.0.1" ttl="2"></hop><hop rtt="5.00" host="64-203-188-144.unassigned.ntelos.net" ipaddr="64.203.188.144" ttl="4"></hop><hop rtt="27.00" host="" ipaddr="10.242.95.6" ttl="5"></hop><hop rtt="26.00" host="" ipaddr="10.242.95.6" ttl="6"></hop><hop rtt="10.00" host="equinix01-iad2.amazon.com" ipaddr="206.126.236.68" ttl="7"></hop><hop rtt="16.00" host="" ipaddr="54.239.111.250" ttl="8"></hop><hop rtt="13.00" host="" ipaddr="52.93.114.1" ttl="9"></hop><hop rtt="9.00" host="" ipaddr="52.93.28.204" ttl="13"></hop><hop rtt="8.00" host="ec2-54-167-18-195.compute-1.amazonaws.com" ipaddr="54.167.18.195" ttl="19"></hop></trace></host><runstats><finished timestr="Thu Sep 24 18:02:18 2020" time="1600984938"></finished><hosts down="0" total="1" up="1"></hosts></runstats></nmaprun>
