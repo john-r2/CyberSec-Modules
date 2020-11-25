@@ -3,13 +3,13 @@
 
 
 # The string to be encrypted/decrypted:
-message = 'This is my secret message.'
+message = 'guv6Jv6Jz!J6rp5r7Jzr66ntrM'
 
 # The encryption/decryption key:
 key = 13
 
 # Whether the program encrypts or decrypts:
-mode = 'encrypt' # Set to either 'encrypt' or 'decrypt'.
+mode = 'decrypt' # Set to either 'encrypt' or 'decrypt'.
 
 # Every possible symbol that can be encrypted:
 SYMBOLS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 !?.'
@@ -24,15 +24,9 @@ for symbol in message:
 
         # Perform encryption/decryption:
         if mode == 'encrypt':
-            translatedIndex = symbolIndex + key
+            translatedIndex = (symbolIndex + key) % len(SYMBOLS)
         elif mode == 'decrypt':
-            translatedIndex = symbolIndex - key
-
-        # Handle wrap-around, if needed:
-        if translatedIndex >= len(SYMBOLS):
-            translatedIndex = translatedIndex - len(SYMBOLS)
-        elif translatedIndex < 0:
-            translatedIndex = translatedIndex + len(SYMBOLS)
+            translatedIndex = (symbolIndex - key) % len(SYMBOLS)
 
         translated = translated + SYMBOLS[translatedIndex]
     else:

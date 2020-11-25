@@ -1,7 +1,10 @@
 # Affine Cipher
 # https://www.nostarch.com/crackingcodes (BSD Licensed)
+# this version modified to use GCD and inverse from Pycryptodome to be consistent
+#   with the rest of this class
 
-import sys, cryptomath, random
+import sys, random
+from Crypto.Util.number import GCD, inverse
 SYMBOLS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 !?.*'
 
 
@@ -32,7 +35,7 @@ def checkKeys(keyA, keyB, mode):
         sys.exit('Cipher is weak if key B is 0. Choose a different key.')
     if keyA < 0 or keyB < 0 or keyB > len(SYMBOLS) - 1:
         sys.exit('Key A must be greater than 0 and Key B must be between 0 and %s.' % (len(SYMBOLS) - 1))
-    if cryptomath.gcd(keyA, len(SYMBOLS)) != 1:
+    if GCD(keyA, len(SYMBOLS)) != 1:
         sys.exit('Key A (%s) and the symbol set size (%s) are not relatively prime. Choose a different key.' % (keyA, len(SYMBOLS)))
 
 
@@ -54,7 +57,7 @@ def decryptMessage(key, message):
     keyA, keyB = getKeyParts(key)
     checkKeys(keyA, keyB, 'decrypt')
     plaintext = ''
-    modInverseOfKeyA = cryptomath.findModInverse(keyA, len(SYMBOLS))
+    modInverseOfKeyA = inverse(keyA, len(SYMBOLS))
 
     for symbol in message:
         if symbol in SYMBOLS:
@@ -70,7 +73,7 @@ def getRandomKey():
     while True:
         keyA = random.randint(2, len(SYMBOLS))
         keyB = random.randint(2, len(SYMBOLS))
-        if cryptomath.gcd(keyA, len(SYMBOLS)) == 1:
+        if GCD(keyA, len(SYMBOLS)) == 1:
             return keyA * len(SYMBOLS) + keyB
 
 
