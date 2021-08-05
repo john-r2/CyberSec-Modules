@@ -1,9 +1,0 @@
-#!/bin/bash
-#slightly less klunky script to print files over SIZE in length
-#grep filters out the first line of ls -l, and directories
-SIZE=1000
-ls -l | grep '^-' | while read LINE; do 
-	NAME=`echo $LINE | awk '{print $9}'`
-	LEN=`echo $LINE | awk '{print $5}'`
-	[ $LEN -gt $SIZE ] && echo "Name:  $NAME  Length:   $LEN"
-done

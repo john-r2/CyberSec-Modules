@@ -1,0 +1,10 @@
+Files in this folder
+Code of Ethics.docx   After disussing cyber ethics (I use the CyberPatriots ethics module) I require the students to sign this  agreement
+
+Virtual Machines.pptx A very brief introduction into virtual machines and cloud services
+
+Homework-VirtualMachines.docx Homework on virtual machines
+
+Lab--Create Windows 10 VM.docx  Allow students to install Win 10 as a virtual machine so they can experiment without damaging the computer lab.  Note:  The lab refers to a classroom server where I store a copy of the Win 10 ISO to prevent us from hogging the school bandwidth.  When network storage for the computer lab is not available, I have copied the ISO to USB flash drives and loaned them to the students.
+
+ISO boot.docx (Optional)  Reference material on how to create bootable flash drives using the Windows command prompt.

@@ -1,5 +1,0 @@
-William S Jevons, The Principles of Science, 1874
-
-python one-liner
- n=8616460799;print([(i,n//i) for i in range(3,int(n**0.5),2) if n%i==0])
-[(89681, 96079)]

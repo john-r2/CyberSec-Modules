@@ -1,0 +1,10 @@
+<!-- This uses the HTML POST method -->
+<html>
+<title> Blank web textbox, post</title>
+<body>
+<h4>Blank Web Textbox Post</h4>
+<form action="textbox.php" method="post"> 
+Textbox: <input name="textname" type="text" /> 
+<input type="submit" />
+</form>
+</body></html>

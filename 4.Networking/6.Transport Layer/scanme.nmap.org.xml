@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?><nmaprun start="1600873178" profile_name="Intense scan, all TCP ports" xmloutputversion="1.04" scanner="nmap" version="7.80" startstr="Wed Sep 23 10:59:38 2020" args="nmap -p 1-65535 -T4 -A -v scanme.nmap.org"><scaninfo services="1-65535" protocol="tcp" numservices="65535" type="syn"></scaninfo><verbose level="1"></verbose><debugging level="0"></debugging><output type="interactive">Starting Nmap 7.80 ( https://nmap.org ) at 2020-09-23 10:59 Eastern Daylight Time
+NSE: Loaded 151 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 10:59
+Completed NSE at 10:59, 0.00s elapsed
+Initiating NSE at 10:59
+Completed NSE at 10:59, 0.00s elapsed
+Initiating NSE at 10:59
+Completed NSE at 10:59, 0.00s elapsed
+Initiating Ping Scan at 10:59
+Scanning scanme.nmap.org (45.33.32.156) [4 ports]
+Completed Ping Scan at 10:59, 0.44s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 10:59
+Completed Parallel DNS resolution of 1 host. at 10:59, 0.01s elapsed
+Initiating SYN Stealth Scan at 10:59
+Scanning scanme.nmap.org (45.33.32.156) [65535 ports]
+Discovered open port 22/tcp on 45.33.32.156
+Discovered open port 80/tcp on 45.33.32.156
+SYN Stealth Scan Timing: About 28.25% done; ETC: 11:01 (0:01:19 remaining)
+SYN Stealth Scan Timing: About 60.42% done; ETC: 11:01 (0:00:40 remaining)
+Discovered open port 9929/tcp on 45.33.32.156
+Discovered open port 31337/tcp on 45.33.32.156
+Completed SYN Stealth Scan at 11:01, 103.10s elapsed (65535 total ports)
+Initiating Service scan at 11:01
+Scanning 4 services on scanme.nmap.org (45.33.32.156)
+Completed Service scan at 11:01, 6.18s elapsed (4 services on 1 host)
+Initiating OS detection (try #1) against scanme.nmap.org (45.33.32.156)
+Retrying OS detection (try #2) against scanme.nmap.org (45.33.32.156)
+Initiating Traceroute at 11:01
+Completed Traceroute at 11:01, 3.04s elapsed
+Initiating Parallel DNS resolution of 9 hosts. at 11:01
+Completed Parallel DNS resolution of 9 hosts. at 11:01, 11.03s elapsed
+NSE: Script scanning 45.33.32.156.
+Initiating NSE at 11:01
+Completed NSE at 11:01, 5.22s elapsed
+Initiating NSE at 11:01
+Completed NSE at 11:01, 0.32s elapsed
+Initiating NSE at 11:01
+Completed NSE at 11:01, 0.01s elapsed
+Nmap scan report for scanme.nmap.org (45.33.32.156)
+Host is up (0.079s latency).
+Other addresses for scanme.nmap.org (not scanned): 2600:3c01::f03c:91ff:fe18:bb2f
+Not shown: 65530 closed ports
+PORT      STATE    SERVICE    VERSION
+22/tcp    open     ssh        OpenSSH 6.6.1p1 Ubuntu 2ubuntu2.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   1024 ac:00:a0:1a:82:ff:cc:55:99:dc:67:2b:34:97:6b:75 (DSA)
+|   2048 20:3d:2d:44:62:2a:b0:5a:9d:b5:b3:05:14:c2:a6:b2 (RSA)
+|   256 96:02:bb:5e:57:54:1c:4e:45:2f:56:4c:4a:24:b2:57 (ECDSA)
+|_  256 33:fa:91:0f:e0:e1:7b:1f:6d:05:a2:b0:f1:54:41:56 (ED25519)
+25/tcp    filtered smtp
+80/tcp    open     http       Apache httpd 2.4.7 ((Ubuntu))
+|_http-favicon: Unknown favicon MD5: 156515DA3C0F7DC6B2493BD5CE43F795
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.7 (Ubuntu)
+|_http-title: Go ahead and ScanMe!
+9929/tcp  open     nping-echo Nping echo
+31337/tcp open     tcpwrapped
+Aggressive OS guesses: Linux 2.6.32 - 3.13 (96%), Linux 2.6.22 - 2.6.36 (95%), Linux 3.10 - 4.11 (95%), Linux 2.6.32 (94%), Linux 3.2 - 4.9 (94%), Linux 3.10 (94%), Linux 2.6.32 - 3.10 (93%), HP P2000 G3 NAS device (93%), Linux 2.6.18 (93%), Linux 2.6.26 - 2.6.35 (93%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 3.163 days (since Sun Sep 20 07:07:02 2020)
+Network Distance: 11 hops
+TCP Sequence Prediction: Difficulty=256 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 21/tcp)
+HOP RTT      ADDRESS
+1   4.00 ms  192.168.1.1
+2   8.00 ms  Comtrend.Home (172.16.0.1)
+3   ...
+4   12.00 ms 64-203-188-144.unassigned.ntelos.net (64.203.188.144)
+5   17.00 ms 10.242.254.137
+6   10.00 ms 10.242.254.137
+7   18.00 ms ae23.cr5-was1.ip4.gtt.net (173.205.52.85)
+8   78.00 ms ae2.cr5-sjc1.ip4.gtt.net (89.149.180.26)
+9   80.00 ms ip4.gtt.net (208.116.213.134)
+10  75.00 ms 173.230.159.69
+11  80.00 ms scanme.nmap.org (45.33.32.156)
+
+NSE: Script Post-scanning.
+Initiating NSE at 11:01
+Completed NSE at 11:01, 0.00s elapsed
+Initiating NSE at 11:01
+Completed NSE at 11:01, 0.00s elapsed
+Initiating NSE at 11:01
+Completed NSE at 11:01, 0.00s elapsed
+Read data files from: C:\Program Files (x86)\Nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 137.10 seconds
+           Raw packets sent: 65680 (2.892MB) | Rcvd: 65680 (2.629MB)
+</output><host comment=""><status state="up"></status><address addrtype="ipv4" vendor="" addr="45.33.32.156"></address><hostnames><hostname type="user" name="scanme.nmap.org"></hostname><hostname type="PTR" name="scanme.nmap.org"></hostname></hostnames><ports><extraports count="65530" state="closed"></extraports><port protocol="tcp" portid="22"><state reason="syn-ack" state="open" reason_ttl="54"></state><service product="OpenSSH" name="ssh" extrainfo="Ubuntu Linux; protocol 2.0" version="6.6.1p1 Ubuntu 2ubuntu2.13" conf="10" method="probed"></service></port><port protocol="tcp" portid="25"><state reason="no-response" state="filtered" reason_ttl="0"></state><service method="table" conf="3" name="smtp"></service></port><port protocol="tcp" portid="80"><state reason="syn-ack" state="open" reason_ttl="52"></state><service product="Apache httpd" name="http" extrainfo="(Ubuntu)" version="2.4.7" conf="10" method="probed"></service></port><port protocol="tcp" portid="9929"><state reason="syn-ack" state="open" reason_ttl="54"></state><service product="Nping echo" method="probed" conf="10" name="nping-echo"></service></port><port protocol="tcp" portid="31337"><state reason="syn-ack" state="open" reason_ttl="54"></state><service method="probed" conf="8" name="tcpwrapped"></service></port></ports><os><portused state="open" portid="22" proto="tcp"></portused><portused state="closed" portid="1" proto="tcp"></portused><portused state="closed" portid="41309" proto="udp"></portused><osmatch line="56411" name="Linux 2.6.32 - 3.13" accuracy="96"><osclass type="general purpose" osfamily="Linux" vendor="Linux" osgen="3.X" accuracy="96"></osclass></osmatch><osmatch line="51668" name="Linux 2.6.22 - 2.6.36" accuracy="95"><osclass type="general purpose" osfamily="Linux" vendor="Linux" osgen="2.6.X" accuracy="95"></osclass></osmatch><osmatch line="63230" name="Linux 3.10 - 4.11" accuracy="95"><osclass type="general purpose" osfamily="Linux" vendor="Linux" osgen="4.X" accuracy="95"></osclass></osmatch><osmatch line="55173" name="Linux 2.6.32" accuracy="94"><osclass type="general purpose" osfamily="Linux" vendor="Linux" osgen="2.6.X" accuracy="94"></osclass></osmatch><osmatch line="65105" name="Linux 3.2 - 4.9" accuracy="94"><osclass type="general purpose" osfamily="Linux" vendor="Linux" osgen="4.X" accuracy="94"></osclass></osmatch><osmatch line="62820" name="Linux 3.10" accuracy="94"><osclass type="general purpose" osfamily="Linux" vendor="Linux" osgen="3.X" accuracy="94"></osclass></osmatch><osmatch line="56381" name="Linux 2.6.32 - 3.10" accuracy="93"><osclass type="general purpose" osfamily="Linux" vendor="Linux" osgen="3.X" accuracy="93"></osclass></osmatch><osmatch line="34647" name="HP P2000 G3 NAS device" accuracy="93"><osclass type="storage-misc" osfamily="embedded" vendor="HP" osgen="" accuracy="93"></osclass></osmatch><osmatch line="49197" name="Linux 2.6.18" accuracy="93"><osclass type="general purpose" osfamily="Linux" vendor="Linux" osgen="2.6.X" accuracy="93"></osclass></osmatch><osmatch line="52913" name="Linux 2.6.26 - 2.6.35" accuracy="93"><osclass type="general purpose" osfamily="Linux" vendor="Linux" osgen="2.6.X" accuracy="93"></osclass></osmatch></os><uptime lastboot="Sun Sep 20 07:07:02 2020" seconds="273293"></uptime><tcpsequence index="256" values="3BF70762,1A09E1DD,691952F2,7B520643,35C13FE3,4975DB97" difficulty="Good luck!"></tcpsequence><ipidsequence values="0,0,0,0,0,0" class="All zeros"></ipidsequence><tcptssequence values="458D19CA,458D1A9F,458D1A9F,458D131F,458D13A5,458D140F" class="other"></tcptssequence><trace port="21" proto="tcp"><hop rtt="4.00" host="" ipaddr="192.168.1.1" ttl="1"></hop><hop rtt="8.00" host="Comtrend.Home" ipaddr="172.16.0.1" ttl="2"></hop><hop rtt="12.00" host="64-203-188-144.unassigned.ntelos.net" ipaddr="64.203.188.144" ttl="4"></hop><hop rtt="17.00" host="" ipaddr="10.242.254.137" ttl="5"></hop><hop rtt="10.00" host="" ipaddr="10.242.254.137" ttl="6"></hop><hop rtt="18.00" host="ae23.cr5-was1.ip4.gtt.net" ipaddr="173.205.52.85" ttl="7"></hop><hop rtt="78.00" host="ae2.cr5-sjc1.ip4.gtt.net" ipaddr="89.149.180.26" ttl="8"></hop><hop rtt="80.00" host="ip4.gtt.net" ipaddr="208.116.213.134" ttl="9"></hop><hop rtt="75.00" host="" ipaddr="173.230.159.69" ttl="10"></hop><hop rtt="80.00" host="scanme.nmap.org" ipaddr="45.33.32.156" ttl="11"></hop></trace></host><runstats><finished timestr="Wed Sep 23 11:01:55 2020" time="1600873315"></finished><hosts down="0" total="1" up="1"></hosts></runstats></nmaprun>

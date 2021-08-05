@@ -1,6 +1,0 @@
-<html>
-<title> Blank PHP Launcher</title>
-<body>
-<h4>Blank PHP Launcher</h4>
-<a href="127.0.0.1/myscript.php"> PHP Blastoff!! /a>
-</body></html>

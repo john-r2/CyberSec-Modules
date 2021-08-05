@@ -1,0 +1,14 @@
+#!/bin/bash
+#very klunky script to print files over SIZE in length
+#modified version of slide 8, CyberAces Flow control lesson
+SIZE=1000
+LEN=0
+ls -l | grep "^-" | while read LINE; do 
+NAME=`echo $LINE | awk '{print $9}'`
+LEN=`echo $LINE | awk '{print $5}'`
+#echo stuff
+if [ $LEN -gt $SIZE ]
+then
+     echo "Name:  $NAME  Length:   $LEN"
+fi
+done
