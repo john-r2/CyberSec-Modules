@@ -5,7 +5,7 @@
 
 import sys, random
 from Crypto.Util.number import GCD, inverse
-SYMBOLS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 !?.'
+SYMBOLS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 !?.;'
 
 
 def main():

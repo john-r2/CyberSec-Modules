@@ -3,13 +3,13 @@
 
 
 # The string to be encrypted/decrypted:
-message = 'guv6Jv6Jz!J6rp5r7Jzr66ntrM'
+message = 'These are lower case'
 
 # The encryption/decryption key:
-key = 13
+key = 40
 
 # Whether the program encrypts or decrypts:
-mode = 'decrypt' # Set to either 'encrypt' or 'decrypt'.
+mode = 'encrypt' # Set to either 'encrypt' or 'decrypt'.
 
 # Every possible symbol that can be encrypted:
 SYMBOLS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 !?.'
