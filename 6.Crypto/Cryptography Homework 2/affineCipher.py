@@ -9,7 +9,7 @@ SYMBOLS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 !?.'
 
 
 def main():
-    myMessage = 'W n;2e83T;G72;GBP8!d;F7;je;7Ye2'
+    myMessage = 'PXaQ1DDARaQGAlXa6QAiQ1QG!1iiAG1!QGAlXa6'
     myKey = 2894
     myMode = 'decrypt' # Set to either 'encrypt' or 'decrypt'.
 
