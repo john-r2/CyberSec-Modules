@@ -1,7 +1,7 @@
 from Crypto.PublicKey import RSA
 #generate a key
 key = RSA.generate(2048)
-
+print(key)
 #export and save the private key
 private_key = key.export_key()
 with open('private.pem', 'wb') as file_handle:

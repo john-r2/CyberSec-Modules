@@ -1,0 +1,4 @@
+I usually use this sequence:
+Cuckoo's Egg (while we are studying Linux)
+Zero Day
+Sandworm
