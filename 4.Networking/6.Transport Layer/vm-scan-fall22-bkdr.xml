@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?><nmaprun start="1668694222" profile_name="" xmloutputversion="1.04" scanner="nmap" version="7.92" startstr="Thu Nov 17 09:10:22 2022" args="nmap -sV -p 31336 172.18.10.171"><scaninfo services="31336" protocol="tcp" numservices="1" type="syn"></scaninfo><verbose level="0"></verbose><debugging level="0"></debugging><output type="interactive">Starting Nmap 7.92 ( https://nmap.org ) at 2022-11-17 09:10 Eastern Standard Time
+Nmap scan report for 172.18.10.171
+Host is up (0.0010s latency).
+
+PORT      STATE SERVICE  VERSION
+31336/tcp open  backdoor No-auth shell (**BACKDOOR**)
+MAC Address: 00:0C:29:08:ED:FF (VMware)
+Service Info: OS: Unix
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 25.07 seconds
+</output><host comment=""><status state="up"></status><address addrtype="ipv4" vendor="" addr="172.18.10.171"></address><address addrtype="mac" vendor="VMware" addr="00:0C:29:08:ED:FF"></address><hostnames></hostnames><ports><port protocol="tcp" portid="31336"><state reason="syn-ack" state="open" reason_ttl="64"></state><service product="No-auth shell" extrainfo="**BACKDOOR**" method="probed" conf="10" name="backdoor"></service></port></ports><os></os><uptime lastboot="" seconds=""></uptime><tcpsequence index="" values="" difficulty=""></tcpsequence><ipidsequence values="" class=""></ipidsequence><tcptssequence values="" class=""></tcptssequence></host><runstats><finished timestr="Thu Nov 17 09:10:47 2022" time="1668694247"></finished><hosts down="0" total="1" up="1"></hosts></runstats></nmaprun>
