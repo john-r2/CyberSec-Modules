@@ -1,0 +1,5 @@
+for i in range(2, 227):
+    if pow(105, i, 227) == 198:
+        print('private key is {0}'.format(i))
+        break
+        
