@@ -1,0 +1,42 @@
+hostname routerA  (or routerB or routerC)
+! ssh needs the router to have a name other than the default, Router
+
+enable secret svgs
+! you can't get enable remotely unless there is a secret set
+
+ip domain-name svgs.k12.va.us
+! part of the router name, needed for the key
+
+crypto key generate rsa 
+! 
+!The name for the keys will be: RemoteSiteRouter1.cisco.com
+!Choose the size of the key modulus in the range of 360 to 2048 for your
+!  General Purpose Keys. Choosing a key modulus greater than 512 may take
+!  a few minutes.
+
+!How many bits in the modulus [512]: you enter the following:
+1024
+!% Generating 1024 bit RSA keys, keys will be non-exportable...[OK]
+
+
+! *Mar 1 0:14:19.855: %SSH-5-ENABLED: SSH 1.99 has been enabled
+! once keys are made, router turns on SSH 1.99 (obsolete)
+
+ip ssh version 2
+
+
+username admin password svgs
+! create the username and password to login via ssh
+
+line vty 0 4
+ login local
+ transport input ssh
+
+
+! line is like an interface, but it is used to control the router
+! vty is virtual terminal, used for ssh and telnet
+! line vty 0 4 configures vty numbers 0 through 4, so five users can log in
+!   it could be line vty 0 15 to use all 16 terminals, but why bother?
+! login local means use the user/password on the router that we just configured
+! transport input ssh means only allow ssh, don't allow telnet
+  

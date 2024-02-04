@@ -1,0 +1,33 @@
+Updating SSH for CTF7
+
+#https://www.getpagespeed.com/server-setup/how-to-fix-yum-after-centos-6-went-eol
+#replace /etc/yum.repos.d/CentOS-Base.repo with this
+
+[C6.10-base]
+name=CentOS-6.10 - Base
+baseurl=http://vault.epel.cloud/6.10/os/i386
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
+enabled=1
+metadata_expire=never
+
+#then run 
+yum update openssh
+
+#Then add an ecdsa key so that the new Kali will accept it
+# this version of openssh cannot do ed25519
+cd /etc/ssh
+# see the existing keys
+ls
+# add ecdsa key with no password -N ''
+ssh-keygen -t ecdsa -N '' -f ssh_host_ecdsa_key
+#ls should now show ssh_host_ecdsa_key and ssh_host_ecdsa_key.pub
+
+#edit /etc/ssh/sshd_config to use new key
+#  in the section named #Hostkeys for protocol version 2, add this line
+#  do not start with # -- the others are defaults so have #
+Hostkey ssh_host_ecdsa_key
+
+#restart sshd
+service sshd restart
+

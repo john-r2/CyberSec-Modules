@@ -1,0 +1,1 @@
+sqlmap -u "http://192.168.86.148/newsletter&id=1" -p "id" --cookie="PHPSESSID=l1c28kd6ogj5lteb1bvgg3kv44" --dbms="MySQL" -v 1 --dbs

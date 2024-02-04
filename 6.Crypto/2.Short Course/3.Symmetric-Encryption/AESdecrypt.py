@@ -2,8 +2,11 @@ from Crypto.Cipher import AES
 
 key = b'thisismykey!1234'
 
-file_in = open('encrypted.bin', 'rb')
-nonce, tag, ciphertext = [ file_in.read(x) for x in (16, 16, -1) ]
+#file_in = open('encrypted.bin', 'rb')
+#nonce, tag, ciphertext = [ file_in.read(x) for x in (16, 16, -1) ]
+nonce = b'\x86\xa7\x91\x10\xc4^B\xc3\xe6]\xec\xb2\xf4\xfa\xd5\xd3'
+tag = b'Q\x9a\xbbb\xeb\xd0\x14@\xe6l\x9d]\x91\x97\x82:'
+ciphertext = b"\xb0\xbc1\xfez\x15\x95\xfb\xf4Pg\x85lx#\x99^\xb2\xa9\xba\x1c'\xb95\x15\xd5\x08c)\xac\xf51\xect\xa6\x83\xd1\xf8\xed\x8a\xfcs\xec@}\x0e\xdc\xdb\xca%\xa9\x18\xe3"
 
 cipher = AES.new(key, AES.MODE_EAX, nonce)
 data = cipher.decrypt_and_verify(ciphertext, tag)
