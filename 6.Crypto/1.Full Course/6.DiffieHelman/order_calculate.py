@@ -2,7 +2,7 @@
 #that each value of alpha generates
 
 from Crypto.Util.number import isPrime
-p = 67
+p = 337
 order = []
 for alpha in range(1,p):
     powers = []
@@ -15,10 +15,10 @@ for alpha in range(1,p):
             break            
 
 order.sort()
-print(order)
+print(('Possible order sizes are:  {0}').format(order))
 if not isPrime(p):
     print("Whoops!! p is not prime!")
 if isPrime((p-1)//2):
-    print('safe prime')
+    print(('p = {0} is a safe prime').format(p))
 else:
-    print('not a safe prime')
+    print(('p = {0} is NOT a safe prime').format(p))

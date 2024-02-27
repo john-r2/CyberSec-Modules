@@ -15,7 +15,7 @@ metadata_expire=never
 yum update openssh
 
 #Then add an ecdsa key so that the new Kali will accept it
-# this version of openssh cannot do ed25519
+# this version of CentOS openssh cannot do ed25519
 cd /etc/ssh
 # see the existing keys
 ls
@@ -25,7 +25,7 @@ ssh-keygen -t ecdsa -N '' -f ssh_host_ecdsa_key
 
 #edit /etc/ssh/sshd_config to use new key
 #  in the section named #Hostkeys for protocol version 2, add this line
-#  do not start with # -- the others are defaults so have #
+#     (do not start with # -- the others are defaults so have #)
 Hostkey ssh_host_ecdsa_key
 
 #restart sshd

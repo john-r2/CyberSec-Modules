@@ -5,7 +5,7 @@
 message = 'IWXH XH BN HTRGTI BTHHPVT'
 
 # The encryption/decryption key:
-key = 15
+#key = 15
 
 # Whether the program encrypts or decrypts:
 mode = 'decrypt' # Set to either 'encrypt' or 'decrypt'.
@@ -13,10 +13,10 @@ mode = 'decrypt' # Set to either 'encrypt' or 'decrypt'.
 # Every possible symbol that can be encrypted:
 SYMBOLS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
-for key in range(26):
 # Stores the encrypted/decrypted form of the message:
-    translated = ''
 
+for key in range(len(SYMBOLS)):
+    translated = ''
     for symbol in message:
         # Note: Only symbols in the `SYMBOLS` string can be encrypted/decrypted.
         if symbol in SYMBOLS:
@@ -34,4 +34,5 @@ for key in range(26):
             translated = translated + symbol
 
     # Output the translated string:
-    print(key, translated)
+    print(translated)
+

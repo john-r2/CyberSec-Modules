@@ -8,7 +8,7 @@
 import sys, random
 from Crypto.Util.number import GCD, inverse
 SYMBOLS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 !?.'
-
+print(len(SYMBOLS))
 
 def main():
     myMessage = 'What a fine mess you have gotten us into!'
