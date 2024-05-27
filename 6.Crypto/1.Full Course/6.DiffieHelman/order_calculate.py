@@ -2,7 +2,7 @@
 #that each value of alpha generates
 
 from Crypto.Util.number import isPrime
-p = 337
+p = 19
 order = []
 for alpha in range(1,p):
     powers = []

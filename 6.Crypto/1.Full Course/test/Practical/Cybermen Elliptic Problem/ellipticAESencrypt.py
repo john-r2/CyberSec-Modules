@@ -14,6 +14,6 @@ cipherb64 = codecs.encode(ciphertext, 'base64')
 
 print(cipherb64)
 
-with open(r'D:\CyberSec-Modules\5.Crypto\test stuff\Cyberman42.b64', 'w') as fh:
-    fh.write(cipherb64.decode())
+#with open(r'D:\CyberSec-Modules\5.Crypto\test stuff\Cyberman42.b64', 'w') as fh:
+#    fh.write(cipherb64.decode())
 

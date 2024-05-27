@@ -13,16 +13,12 @@ $usermail = @()
 foreach ($thisUser in $user) {
     #create the email address, example:  Luke.Skywalker@Starwars.edu
     $email = $thisUser.firstname + “.” + $thisUser.lastname + “@” + $thisUser.domain + “.edu”
-
-    #create a temporary object for our data
-    $tempUserObj = New-Object System.Object
-
-    #add our data to the correct properties of the temporary object
-    $tempUserObj | Add-Member -Type NoteProperty -Name FirstName -Value $thisUser.firstname
-    $tempUserObj | Add-Member -Type NoteProperty -Name LastName -Value $thisUser.Lastname
-    $tempUserObj | Add-Member -Type NoteProperty -Name Domain -Value $thisUser.Domain
-    $tempUserObj | Add-Member -Type NoteProperty -Name Email -Value $email
-
+    $tempUserObj = @{
+        FirstName = $thisuser.FirstName
+        LastName = $thisuser.LastName
+        Domain = $thisuser.Domain
+        Email = $email
+    } 
     #append our temporary object to $usermail
     $usermail += $tempUserObj
 }

@@ -1,0 +1,88 @@
+ $.ec.modk.ScalarMultiplication.prototype.getSubgroupOrder = function() {
+        if( this.singular || !this.prime ) {
+            return 0;
+        }
+
+        var n = 2;
+        var q = this.addPoints( this.p, this.p );
+
+        while( q !== null ) {
+            q = this.addPoints( this.p, q );
+            n += 1;
+        }
+
+        return n;
+
+
+
+   $.ec.modk.Base.prototype.addPoints = function( p1, p2 ) {
+        // Returns the result of adding point p1 to point p2, according to the
+        // group law for elliptic curves. The point at infinity is represented
+        // as null.
+
+        if( p1 === null ) {
+            return p2;
+        }
+        if( p2 === null ) {
+            return p1;
+        }
+
+        var x1 = p1[ 0 ];
+        var y1 = p1[ 1 ];
+        var x2 = p2[ 0 ];
+        var y2 = p2[ 1 ];
+        var m;
+
+        if( x1 !== x2 ) {
+            // Two distinct points.
+            m = ( y1 - y2 ) * this.inverseOf( x1 - x2 );
+        }
+        else {
+            if( y1 === 0 && y2 === 0 ) {
+                // This may only happen if p1 = p2 is a root of the elliptic
+                // curve, hence the line is vertical.
+                return null;
+            }
+            else if( y1 === y2 ) {
+                // The points are the same, but the line is not vertical.
+                m = ( 3 * x1 * x1 + this.a ) * this.inverseOf( 2 * y1 );
+            }
+            else {
+                // The points are not the same and the line is vertical.
+                return null;
+            }
+        }
+
+        m %= this.k;
+
+        var x3 = ( m * m - x1 - x2 ) % this.k;
+        var y3 = ( m * ( x1 - x3 ) - y1 ) % this.k;
+
+        if( x3 < 0 ) {
+            x3 += this.k;
+        }
+        if( y3 < 0 ) {
+            y3 += this.k;
+        }
+
+        return [ x3, y3 ];
+    };
+
+    $.ec.modk.Base.prototype.getCurvePoints = function() {
+        // Returns a list of x,y points belonging to the curve from xMin to
+        // xMax. The resulting array is ordered and may contain some null
+        // points in case of discontinuities.
+
+        var points = [];
+
+        for( var x = 0; x < this.k; x += 1 ) {
+            for( var y = 0; y < this.k; y += 1 ) {
+                if( ( y * y - x * x * x - this.a * x - this.b ) % this.k
+                        === 0 ) {
+                    points.push([ x, y ]);
+                }
+            }
+        }
+
+        return points;
+    };

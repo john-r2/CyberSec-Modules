@@ -4,10 +4,10 @@
 # repeat to make the subgroup size more
 # obvious
 
-p = 29311
-for alpha in range(1,p):
+p = 41495592889
+for alpha in [2679865019]:
     powers = []
-    for i in range(1,p):
+    for i in range(1,50):
         x = pow(alpha, i, p)
         if x == 1:
             powers.append(x)

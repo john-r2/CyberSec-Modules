@@ -11,5 +11,5 @@ cipherb64 = codecs.encode(ciphertext, 'base64')
 
 print(cipherb64)
 
-with open(r'D:\CyberSec-Modules\5.Crypto\test stuff\MastersOrder1563.b64', 'w') as fh:
+with open('MastersOrder1563.b64', 'w') as fh:
     fh.write(cipherb64.decode())

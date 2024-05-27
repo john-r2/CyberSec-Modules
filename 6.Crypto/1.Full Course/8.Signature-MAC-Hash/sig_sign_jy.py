@@ -1,7 +1,7 @@
 #create a signature
 from Crypto.Hash import SHA256
 #read the file
-with open('Cryptography Homework 8.docx', 'rb') as fh:
+with open(r'D:\CyberSec-Modules\6.Crypto\1.Full Course\8.Signature-MAC-Hash\Cryptography Homework 8.docx', 'rb') as fh:
     plaintext = fh.read()
 #create the hash
 hash_obj = SHA256.new(plaintext)

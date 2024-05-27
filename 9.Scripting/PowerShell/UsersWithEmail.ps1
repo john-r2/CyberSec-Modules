@@ -1,6 +1,7 @@
 ﻿#For PowerShell Lab 4
 
 #Grab the user file (FirstName, LastName, Domain)
+cd D:\CyberSec-Modules\9.Scripting\PowerShell
 $user = Import-Csv users.csv
 
 #Create a new, empty, object
@@ -23,3 +24,5 @@ $user | ForEach-Object {
     #append our temporary object to $usermail
     $usermail += $tempUserObj
 }
+
+$usermail
